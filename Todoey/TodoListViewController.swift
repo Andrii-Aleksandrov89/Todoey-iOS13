@@ -27,12 +27,14 @@ class TodoListViewController: UITableViewController {
       let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoItemCell", for: indexPath)
       
       cell.textLabel?.text = itemArray[indexPath.row]
-      
-      
+
       return cell
    }
    
-   
+   override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+      tableView.deselectRow(at: indexPath, animated: true)
+
+   }
 
 
 }
