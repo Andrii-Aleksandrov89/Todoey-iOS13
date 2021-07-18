@@ -38,7 +38,7 @@ class TodoListViewController: UITableViewController {
       //Deselect cell highlight after tap
       tableView.deselectRow(at: indexPath, animated: true)
       
-      // Add remove checkmark on tap
+      // Add or remove checkmark on tap
       if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
          tableView.cellForRow(at: indexPath)?.accessoryType = .none
       } else {
