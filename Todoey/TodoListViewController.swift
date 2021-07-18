@@ -13,7 +13,9 @@ class TodoListViewController: UITableViewController {
    let itemArray = ["finish two iOS lectures", "go for a walk", "meditate and chill", "think about my future career and plan future developers path"]
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        
+      
+      super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
    
@@ -46,6 +48,5 @@ class TodoListViewController: UITableViewController {
       }
       
    }
-
 }
 
